@@ -11,7 +11,9 @@ $(document).ready(function() {
 	$('#reset').on('click', function() {
 		$('.box').removeClass('white');
 	});
+
 	var color = 'white';
+
 	$('#red').on('click', function() {
 		color = 'red';
 	});
@@ -30,10 +32,13 @@ $(document).ready(function() {
 	$('.box').on('click', function() {
 		$(this).addClass(color);
 	});
+
+	var colors = 'red blue green yellow white';
+
 	$('.box').on('dblclick', function() {
-		$(this).removeClass(color);
+		$(this).removeClass(colors);
 	});
 	$('.box').on('click', function() {
-		$('.box').removeClass(color);
+		$('.box').removeClass(colors);
 	});
 })
